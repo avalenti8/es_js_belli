@@ -39,17 +39,19 @@ if(delta > 0){
 
 let n = prompt("quanti valori vuoi?")
 let max = 0
-let sum = o
-for(let y = 0; y < n; n++){
+let sum = 0
+let neg = 0
+for(let y = 0; y < n; y++){
     let v = prompt("dimmi un valore")
     if(v > max){
         max = v
     }
     sum += v
     if (v < 0){
-        alert(v)
+        neg += v
     }
 }
 let media = sum/n
 alert("ecco la media: " + media)
 alert("ecco il maggiore: " + max)
+alert("ecco la somma dei negativi: " + neg)
